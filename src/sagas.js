@@ -12,7 +12,7 @@ function* fetchGithubRepos(action) {
        const resp = yield call(getGithubRepos, action.organization, page++);
        repos = [...repos, ...resp.data];
        // Check if header links contains the rel="next" we need to query next page
-       fetchNext = resp.headers.link.indexOf('rel="next"') !== -1;
+       fetchNext = resp.headers.link && resp.headers.link.indexOf('rel="next"') !== -1;
      }
      yield put(receiveRepos(repos));
    } catch (e) {

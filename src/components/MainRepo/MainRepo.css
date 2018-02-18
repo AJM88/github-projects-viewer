@@ -1,2 +1,33 @@
 .avatar {
-  width: 30px; }
+  width: 30px;
+  height: 30px;
+  margin-right: 5px; }
+
+.mainRepo {
+  width: 100%; }
+  .mainRepo__header {
+    margin: 10px; }
+    .mainRepo__header__title {
+      display: flex;
+      align-items: center; }
+      .mainRepo__header__title h1 {
+        margin: 10px 10px 10px 0; }
+  .mainRepo__details-lists {
+    display: flex;
+    justify-content: space-around; }
+    .mainRepo__details-lists__item {
+      background-color: white;
+      box-shadow: 2px 2px #999;
+      margin: 10px;
+      padding: 5px;
+      min-width: 250px;
+      flex-grow: 1;
+      max-height: 75vh;
+      overflow-y: auto;
+      overflow-x: hidden; }
+      .mainRepo__details-lists__item__title {
+        text-align: center; }
+      .mainRepo__details-lists__item__row {
+        display: flex;
+        vertical-align: middle;
+        margin: 5px 0; }

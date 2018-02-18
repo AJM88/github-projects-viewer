@@ -1,9 +1,40 @@
-.repoList {
-  list-style: none;
-  margin: 5px;
-  padding: 5px;
-  width: 300px;
-  height: 90vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+.home {
+  display: flex;
+
+  &__sidebar {
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        height: 25px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+    }
+
+    &__list{
+      padding: 10px;
+      list-style: none;
+      height: 75vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+
+  &__repo-content {
+
+  }
+
+  &__repo-notselected {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

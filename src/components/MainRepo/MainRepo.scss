@@ -1,3 +1,48 @@
 .avatar {
   width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.mainRepo {
+  width: 100%;
+
+  &__header {
+    margin: 10px;
+
+    &__title {
+      display: flex;
+      align-items: center;
+      h1 {
+        margin: 10px 10px 10px 0
+      }
+    }
+  }
+
+  &__details-lists {
+    display: flex;
+    justify-content: space-around;
+
+    &__item {
+        background-color: white;
+        box-shadow: 2px 2px #999;
+        margin: 10px;
+        padding: 5px;
+        min-width: 250px;
+        flex-grow: 1;
+        max-height: 75vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &__title {
+          text-align: center;
+        }
+
+        &__row {
+          display: flex;
+          vertical-align: middle;
+          margin: 5px 0;
+        }
+    }
+  }
 }
