@@ -1,0 +1,10 @@
+.repoItem {
+  padding: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 4px 4px #999; }
+  .repoItem:active {
+    box-shadow: 2px 2px #666;
+    transform: translateY(2px);
+    transform: translateX(2px); }
